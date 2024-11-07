@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Cambiamos `justify-content: center` por `flex-direction: column` para organizar el `h1` y el formulario en forma de columna */
+    display: flex;
+    flex-direction: column;
+    /* Usamos `align-items: center` para centrar el contenido en la página */
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    /* Eliminamos `text-align: center` ya que ahora el `h1` está alineado por el flujo de la columna */
+    /* Añadimos `margin-top: 20px` para dar un espacio superior al título */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    /* Este nuevo contenedor permite centrar solo el formulario sin afectar al `h1` */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-submit {
+    /* Cambiamos el color de fondo a azul para cumplir con el requisito */
+    background-color: blue; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}

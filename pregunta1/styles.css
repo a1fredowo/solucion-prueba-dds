@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    /* Error: Usar `justify-content: center` y `align-items: center` en el `body` centra todos los elementos hijos, 
+       incluyendo el título (h1) y el formulario, en el medio de la pantalla. Esto no cumple con el requisito 
+       de alinear solo el formulario al centro y mantener el título en su posición. 
+       Para corregir esto, se debería eliminar `justify-content: center` o crear un contenedor separado 
+       solo para el formulario. */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    /* Error: `text-align: center` no es necesario si estamos utilizando `justify-content: center` en el `body`.
+       Sin embargo, dado el objetivo del enunciado, es preferible eliminar la alineación del título y controlar
+       su posición mediante márgenes y/o un contenedor separado para el formulario. */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-submit {
+    /* Error: El color de fondo del botón es rojo (#FF0000), cuando el enunciado especifica que debería ser azul. 
+       Cambiar `background-color: #FF0000` a `background-color: blue` o `#0000FF`. */
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
